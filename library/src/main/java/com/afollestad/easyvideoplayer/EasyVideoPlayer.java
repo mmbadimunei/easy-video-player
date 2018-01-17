@@ -830,6 +830,7 @@ public class EasyVideoPlayer extends FrameLayout
             @Override
             public void onClick(View view) {
               toggleControls();
+              if(mCallback!=null)
               mCallback.onClickVideoFrame(easyVideoPlayer);
             }
           });
